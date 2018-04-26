@@ -22,7 +22,7 @@ import PackageDescription
 let package = Package(
     name: "CCurl",
     providers: [
-        .brew(["curl"]),
+        .brew(["curl --with-openssl --with-nghttp2"]),
         .apt(["libcurl4-openssl-dev"])
     ],
     products: [
